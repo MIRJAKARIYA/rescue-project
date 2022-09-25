@@ -1,10 +1,10 @@
-const cartItems = {}
+const cartItems = []
 
 const parentContainer = document.getElementById('parent__cart_container')
 
 vehicleData.forEach(data => {
-    console.log(data)
-    const {category, description, image, name, price, quantity} = data;
+
+    const {category, description, image, name, price, quantity, id} = data;
     const div = document.createElement('div');
     div.classList.add('card', 'card-compact', 'bg-base-100', 'shadow-xl')
     div.innerHTML = `
@@ -21,7 +21,7 @@ vehicleData.forEach(data => {
       </div>
       <div class="card-actions flex justify-between">
       <input type="text" placeholder="Enter quantity" class="input input-bordered input-primary w-[60%] quantity-input" />
-        <button class="btn btn-primary w-[35%]" disabled>Buy Now</button>
+        <button onclick="addToCart('${id}',this)" class="btn btn-primary w-[35%]" disabled>Buy Now</button>
       </div>
     </div>
     `
@@ -32,8 +32,8 @@ vehicleData.forEach(data => {
 const quantityFields = document.getElementsByClassName('quantity-input')
 for(const quantity of quantityFields){
   quantity.addEventListener('keyup',(e)=>{
-    console.log(e.target.value)
-    console.log()
+
+
     if(e.target.value !== ''){
       e.target.parentNode.children[1].removeAttribute('disabled')
     }
@@ -44,6 +44,34 @@ for(const quantity of quantityFields){
 }
 
 
+// add to cart function 
+function addToCart(id,button){
+  const inputValue = button.parentNode.children[0]
+  const quantity = inputValue.value
+  inputValue.value = ''
+  button.setAttribute('disabled',true)
+  console.log(id in cartItems)
+  console.log(quantity)
+  const singleItem = {
+    id: id,
+    quantity: quantity
+  }
+  cartItems.push(singleItem)
+  setItemsToTheCart()
+  
+}
+
+
+// set items to the cart 
+const setItemsToTheCart = () =>{
+  console.log(cartItems)
+  const selectedItemsContainer = document.getElementById('all-selected-items');
+
+}
+
+const singleCartItem = () =>{
+  
+}
 
 //navigate to login page
 const navigateToLogin = () =>{

@@ -1,5 +1,6 @@
 const vehicleData = [
     {
+      id: 1,
       name: "LEOPARD 2PL MBT",
       user: null,
       category: "BATTLE TANKS",
@@ -11,6 +12,7 @@ const vehicleData = [
       supplierName: "Polish Armaments Group"
     },
     {
+      id: 2,
       name: "MIKOYAN MIG-29",
       user: null,
       category: "FIGHTER JETS",
@@ -22,6 +24,7 @@ const vehicleData = [
       supplierName: "Mikoyan"
     },
     {
+      id: 3,
       name: "TYPE 053H FRIGATE",
       user: null,
       category: "BATTLE SHIPS",
@@ -33,6 +36,7 @@ const vehicleData = [
       supplierName: "Naresuan"
     },
     {
+      id: 4,
       name: "BAYRAKTAR TB2",
       user: null,
       category: "UAV DRONES",
@@ -44,6 +48,7 @@ const vehicleData = [
       supplierName: "Baykar"
     },
     {
+      id: 5,
       name: "HQ-22 SAM",
       user: null,
       category: "SAM SYSTEMS",
@@ -55,6 +60,7 @@ const vehicleData = [
       supplierName: "CASIC"
     },
     {
+      id: 6,
       name: "AKULA CLASS SUBMARINE",
       user: null,
       category: "BATTLE SUBMARINES",
@@ -66,6 +72,7 @@ const vehicleData = [
       supplierName: "Severodvinsk"
     },
     {
+      id: 7,
       name: "BLACK EAGLE MBT",
       user: null,
       category: "BATTLE TANKS",
@@ -77,6 +84,7 @@ const vehicleData = [
       supplierName: "Omsktransmash"
     },
     {
+      id: 8,
       name: "VT-4 MBT",
       user: null,
       category: "BATTLE TANKS",
@@ -88,6 +96,7 @@ const vehicleData = [
       supplierName: "Norinco"
     },
     {
+      id: 9,
       name: "KERRAR MBT",
       user: null,
       category: "BATTLE TANKS",
@@ -99,6 +108,7 @@ const vehicleData = [
       supplierName: "IRGC"
     },
     {
+      id: 10,
       name: "F-22 RAPTOR",
       user: null,
       category: "FIGHTER JETS",
@@ -110,6 +120,7 @@ const vehicleData = [
       supplierName: "Lockheed Martin Aeronautics"
     },
     {
+      id: 11,
       name: "SUKHOI SU-57",
       user: null,
       category: "FIGHTER JETS",
@@ -121,6 +132,7 @@ const vehicleData = [
       supplierName: "Komsomolsk-on-Amur Aircraft Plant"
     },
     {
+      id: 12,
       name: "F-35 LIGHTNING II",
       user: null,
       category: "FIGHTER JETS",
@@ -132,6 +144,7 @@ const vehicleData = [
       supplierName: "Lockheed Martin"
     },
     {
+      id: 13,
       name: "CASTLE CLASS CORVETTE",
       user: null,
       category: "BATTLE SHIPS",
@@ -143,6 +156,7 @@ const vehicleData = [
       supplierName: "Hall,Russell & Company"
     },
     {
+      id: 14,
       name: "HAMILTON CLASS FRIGATE",
       user: null,
       category: "BATTLE SHIPS",
@@ -154,6 +168,7 @@ const vehicleData = [
       supplierName: "Avondale Shipyards"
     },
     {
+      id: 15,
       name: "TYPE 056 CORVETTE",
       user: null,
       category: "BATTLE SHIPS",
@@ -165,6 +180,7 @@ const vehicleData = [
       supplierName: "Hudong-Zhonghua Shipbuilding"
     },
     {
+      id: 16,
       name: "CAIG WING LOONG",
       user: null,
       category: "UAV DRONES",
@@ -176,6 +192,7 @@ const vehicleData = [
       supplierName: "Chengdu Aircraft Industry"
     },
     {
+      id: 17,
       name: "KAMAN 22",
       user: null,
       category: "UAV DRONES",
@@ -187,6 +204,7 @@ const vehicleData = [
       supplierName: "IRIAF"
     },
     {
+      id: 18,
       name: "SHAHED 129",
       user: null,
       category: "UAV DRONES",
@@ -198,6 +216,7 @@ const vehicleData = [
       supplierName: "HESA"
     },
     {
+      id: 19,
       name: "YA ZAHRA ADS",
       user: null,
       category: "SAM SYSTEMS",
@@ -209,6 +228,7 @@ const vehicleData = [
       supplierName: "IRIADF"
     },
     {
+      id: 20,
       name: "AKASH SAM",
       user: null,
       category: "SAM SYSTEMS",
@@ -220,6 +240,7 @@ const vehicleData = [
       supplierName: "Bharat Dynamics Limited"
     },
     {
+      id: 21,
       name: "HISAR SAM",
       user: null,
       category: "SAM SYSTEMS",
@@ -231,6 +252,7 @@ const vehicleData = [
       supplierName: "ASELSAN and ROKETSAN"
     },
     {
+      id: 22,
       name: "ASTUTE CLASS SUBMARINE",
       user: null,
       category: "BATTLE SUBMARINES",
@@ -242,6 +264,7 @@ const vehicleData = [
       supplierName: "BAE Systems Submarines"
     },
     {
+      id: 23,
       name: "BARRACUDA CLASS SUBMARINE",
       user: null,
       category: "BATTLE SUBMARINES",
@@ -253,6 +276,7 @@ const vehicleData = [
       supplierName: "Naval Group "
     },
     {
+      id: 24,
       name: "SEAWOLF CLASS SUBMARINE",
       user: null,
       category: "BATTLE SUBMARINES",
@@ -264,6 +288,7 @@ const vehicleData = [
       supplierName: "General Dynamics Electric Boat"
     },
     {
+      id: 25,
       name: "LECLERC MBT",
       user: null,
       category: "BATTLE TANKS",
@@ -275,6 +300,7 @@ const vehicleData = [
       supplierName: "Direction des Armements"
     },
     {
+      id: 26,
       name: "CHENGDU J-20",
       user: null,
       category: "FIGHTER JETS",
@@ -286,6 +312,7 @@ const vehicleData = [
       supplierName: "Chengdu Aerospace Corporation"
     },
     {
+      id: 27,
       name: "PADMA CLASS PATROL VESSEL",
       user: null,
       category: "BATTLE SHIPS",
@@ -297,6 +324,7 @@ const vehicleData = [
       supplierName: "Khulna Shipyard"
     },
     {
+      id: 28,
       name: "TAI ANKA",
       user: null,
       category: "UAV DRONES",
@@ -308,6 +336,7 @@ const vehicleData = [
       supplierName: "Turkish Aerospace Industries"
     },
     {
+      id: 29,
       name: "RAPIER SAM",
       user: null,
       category: "SAM SYSTEMS",
@@ -319,6 +348,7 @@ const vehicleData = [
       supplierName: "British Aircraft Corporation"
     },
     {
+      id: 30,
       name: "TRAFALGAR CLASS SUBMARINE",
       user: null,
       category: "BATTLE SUBMARINES",
