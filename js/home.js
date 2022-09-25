@@ -20,7 +20,7 @@ vehicleData.forEach(data => {
         <p>quantity: ${quantity}</p>
       </div>
       <div class="card-actions flex justify-between">
-      <input type="text" placeholder="Enter quantity" class="input input-bordered input-primary w-[60%] quantity-input" />
+      <input type="number" placeholder="Enter quantity" class="input input-bordered input-primary w-[60%] quantity-input" />
         <button onclick="addToCart('${id}',this)" class="btn btn-primary w-[35%]" disabled>Buy Now</button>
       </div>
     </div>
@@ -50,28 +50,29 @@ function addToCart(id,button){
   const quantity = inputValue.value
   inputValue.value = ''
   button.setAttribute('disabled',true)
-  console.log(id in cartItems)
-  console.log(quantity)
-  const singleItem = {
+  console.log(id)
+  const item = vehicleData.find(data => data.id == id)
+  cartSingleItem = {
     id: id,
-    quantity: quantity
+    quantity: quantity,
+    image: item.image,
+    price: item.price
   }
-  cartItems.push(singleItem)
+  cartItems.push(cartSingleItem)
   setItemsToTheCart()
-  
 }
 
 
 // set items to the cart 
 const setItemsToTheCart = () =>{
-  console.log(cartItems)
+  
   const selectedItemsContainer = document.getElementById('all-selected-items');
 
+  cartItems.forEach(item=> console.log(item))
+
 }
 
-const singleCartItem = () =>{
-  
-}
+
 
 //navigate to login page
 const navigateToLogin = () =>{

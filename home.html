@@ -47,13 +47,34 @@
             <!-- all cards will be here -->
         </div>
         <!-- card container ends here -->
-        <div class="min-h-[200px] md:w-[25%] mb-5 md:mb-0 shadow-xl bg-slate-600 rounded-2xl max-h-[500px] md:sticky top-0" id="cart">
-          <div id="randomly-selected-item">
+        <div class="min-h-[200px] md:w-[25%] mb-5 md:mb-0 shadow-xl bg-slate-600 rounded-2xl h-[650px] overflow-auto md:sticky top-0 p-5 text-white" id="cart">
 
+          <h1 class="text-center font-bold">CART</h1>
+          <hr>
+          <p class="font-semibold text-warning mt-5">Randomly selected</p>
+          <div id="randomly-selected-item" class="min-h-[150px] border-2">
+            <p class="text-center mt-16">no data available</p>
           </div>
 
-          <div id="all-selected-items">
+          <h1 class="mt-5 font-semibold text-warning">Cart items</h1>
 
+          
+          <div id="all-selected-items" class=" border-2 min-h-[150px]">
+            <p class="text-center mt-16">no data available</p>
+          </div>
+
+
+          <h1 class="text-center font-semibold mt-5">Expenses</h1>
+
+          <div id="expenses">
+            <p>Total Cost: $<span id="total-cost">0</span></p>
+            <p>Tax: $<span id="tax">0</span></p>
+            <div>
+              <p>Apply promo code!!</p>
+              <input class="input input-bordered w-[100px] text-black h-[35px]" type="text">
+              <button class="btn btn-warning btn-sm">apply</button>
+            </div>
+            <p>Grand Total: $<span id="grand-total">0</span></p>
           </div>
 
         </div>
