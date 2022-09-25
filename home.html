@@ -39,6 +39,20 @@
     </div>
     <!-- navbar ends here -->
 
+
+
+    <div class="flex justify-center items-center mt-10">
+      <select class="select select-primary w-full max-w-xs" id="select-category">
+        <option selected>ALL VEHICLES</option>
+        <option value="FIGHTER JETS">FIGHTER JETS</option>
+        <option value="BATTLE SHIPS">BATTLE SHIPS</option>
+        <option value="UAV DRONES">UAV DRONES</option> 
+        <option value="SAM SYSTEMS">SAM SYSTEMS</option> 
+        <option value="BATTLE SUBMARINES">BATTLE SUBMARINES</option> 
+        <option value="BATTLE TANKS">BATTLE TANKS</option> 
+      </select>
+    </div>
+
     <!-- card container starts here -->
     <div class="min-h-[500px] flex justify-between flex-col-reverse md:flex-row mt-10 max-w-[1700px] mx-auto">
         <!-- card container starts here -->
@@ -52,15 +66,15 @@
           <h1 class="text-center font-bold">CART</h1>
           <hr>
           <p class="font-semibold text-warning mt-5">Randomly selected</p>
-          <div id="randomly-selected-item" class="min-h-[150px] border-2">
-            <p class="text-center mt-16">no data available</p>
+          <div id="randomly-selected-item" class="min-h-[70px]">
+            
           </div>
 
           <h1 class="mt-5 font-semibold text-warning">Cart items</h1>
 
           
-          <div id="all-selected-items" class=" border-2 min-h-[150px]">
-            <p class="text-center mt-16">no data available</p>
+          <div id="all-selected-items" class="min-h-[70px]">
+            
           </div>
 
 
@@ -70,7 +84,7 @@
             <p>Total Cost: $<span id="total-cost">0</span></p>
             <p>Tax: $<span id="tax">0</span></p>
             <div>
-              <p>Apply promo code!!</p>
+              <p class="text-secondary">Apply promo code!!</p>
               <input class="input input-bordered w-[100px] text-black h-[35px]" type="text">
               <button class="btn btn-warning btn-sm">apply</button>
             </div>
