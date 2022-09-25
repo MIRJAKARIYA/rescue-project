@@ -4,7 +4,8 @@ const parentContainer = document.getElementById("parent__cart_container");
 
 const putData = (filter) =>{
   let filteredData = vehicleData;
-  if(filter !== 'All'){
+  parentContainer.innerHTML = ''
+  if(filter !== 'ALL VEHICLES'){
     filteredData = vehicleData.filter(data => data.category === filter)
   }
  
@@ -33,13 +34,8 @@ const putData = (filter) =>{
       </div>
       `;
     parentContainer.appendChild(div);
-  });
-}
 
-putData('All')
-
-// event listeners here
-const quantityFields = document.getElementsByClassName("quantity-input");
+    const quantityFields = document.getElementsByClassName("quantity-input");
 for (const quantity of quantityFields) {
   quantity.addEventListener("keyup", (e) => {
     if (e.target.value !== "") {
@@ -49,6 +45,19 @@ for (const quantity of quantityFields) {
     }
   });
 }
+  });
+}
+
+putData('ALL VEHICLES')
+
+document.getElementById('select-category').addEventListener('change',(e)=>{
+  const search = e.target.value
+
+  putData(e.target.value)
+})
+
+// event listeners here
+
 
 // add to cart function
 function addToCart(id, button) {
@@ -78,7 +87,7 @@ function addToCart(id, button) {
 const setItemsToTheCart = () => {
   let totalPrice = 0;
   const selectedItemsContainer = document.getElementById("all-selected-items");
-
+  selectedItemsContainer.innerHTML = ''
   cartItems.forEach((item) => {
     totalPrice += parseInt(item.price);
     const div = document.createElement("div");
@@ -90,7 +99,8 @@ const setItemsToTheCart = () => {
       "p-3",
       "shadow-md",
       "h-[120px]",
-      "bg-black"
+      "bg-black",
+      "mb-2"
     );
     div.innerHTML = `
     <div class="w-[30%]">
@@ -104,6 +114,7 @@ const setItemsToTheCart = () => {
     </div>
   `;
     selectedItemsContainer.appendChild(div);
+
   });
 };
 
